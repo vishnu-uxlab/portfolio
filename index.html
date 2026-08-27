@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Vishnu K. — Product Design Lead | UX, Product &amp; AI</title>
+<meta name="description" content="Vishnu K. is a Product Design Lead with 10+ years of experience creating simple experiences for complex problems across UX, product design and AI." />
+<meta property="og:title" content="Vishnu K. — Product Design Lead | UX, Product &amp; AI" />
+<meta property="og:description" content="Creating simple experiences for complex problems. 10+ years across UX, product design and AI. Chennai, India." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" />
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:#0A0A0A;overflow-x:hidden}
+body{margin:0;background:#0A0A0A;color:#F4F4F0;-webkit-font-smoothing:antialiased;font-family:'Manrope',system-ui,sans-serif}
+img{display:block;max-width:100%}
+a{color:#C6F24E;text-decoration:none}
+a:hover{color:#F4F4F0}
+button{font:inherit;color:inherit}
+::selection{background:#C6F24E;color:#0A0A0A}
+:focus-visible{outline:2px solid #C6F24E;outline-offset:4px;border-radius:2px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}html{scroll-behavior:auto}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="--accent:#C6F24E;--bg:#0A0A0A;--ink:#F4F4F0;--dim:#8A8A85;--line:#1F1F1D;--graphite:#141413;position:relative;background:var(--bg);color:var(--ink);min-height:100vh;overflow-x:clip;cursor:var(--cur,none)">
+
+<nav aria-label="Primary" style="position:fixed;left:0;right:0;top:0;z-index:60;background:rgba(10,10,10,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)">
+  <div style="display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 clamp(20px,4.6vw,74px)">
+    <a href="#intro" style="font:700 12px/1 'Manrope',sans-serif;letter-spacing:.24em;color:var(--ink)">VISHNU&#8217;S LAB</a>
+    <button type="button" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-label="Toggle navigation menu" style="display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid var(--line);border-radius:999px;padding:10px 16px;font:600 11px/1 'Manrope',sans-serif;letter-spacing:.18em;color:var(--ink);min-height:40px;cursor:pointer;transition:border-color .25s ease" style-hover="border-color:#3A3A38"><span aria-hidden="true" style="display:flex;flex-direction:column;gap:3px"><span style="display:block;width:14px;height:1px;background:var(--accent)"></span><span style="display:block;width:14px;height:1px;background:var(--accent)"></span><span style="display:block;width:9px;height:1px;background:var(--accent)"></span></span>{{ menuLabel }}</button>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <ul style="list-style:none;margin:0;padding:10px clamp(20px,4.6vw,74px) 30px;display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);max-height:calc(100vh - 60px);overflow-y:auto">
+    <li><a href="#intro" onClick="{{ closeMenu }}" style="display:block;padding:14px 0;font:600 clamp(13px,1.5vw,17px)/1 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ink)">01 &nbsp; INTRO</a></li>
+    <li><a href="#toolkit" onClick="{{ closeMenu }}" style="display:block;padding:14px 0;font:600 clamp(13px,1.5vw,17px)/1 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ink)">02 &nbsp; TOOLKIT</a></li>
+    <li><a href="#services" onClick="{{ closeMenu }}" style="display:block;padding:14px 0;font:600 clamp(13px,1.5vw,17px)/1 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ink)">03 &nbsp; SERVICES</a></li>
+    <li><a href="#work" onClick="{{ closeMenu }}" style="display:block;padding:14px 0;font:600 clamp(13px,1.5vw,17px)/1 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ink)">04 &nbsp; WORK</a></li>
+    <li><a href="#contact" onClick="{{ closeMenu }}" style="display:block;padding:14px 0;font:600 clamp(13px,1.5vw,17px)/1 'Manrope',sans-serif;letter-spacing:.16em;color:var(--ink)">05 &nbsp; CONTACT</a></li>
+    <li style="margin-top:12px;padding-top:14px;border-top:1px solid var(--line);font:500 10px/1.7 'Manrope',sans-serif;letter-spacing:.16em;color:var(--dim)">10+ YEARS · CHENNAI, INDIA<br /><span style="color:var(--accent)">● AVAILABLE</span></li>
+  </ul>
+  </sc-if>
+</nav>
+
+<main style="margin-left:var(--rail, 260px);padding-top:var(--railTop, 0px)">
+
+<section id="intro" data-hero="1" data-screen-label="Hero" style="position:relative;height:190vh">
+  <div style="position:sticky;top:var(--railTop, 60px);height:calc(100vh - var(--railTop, 60px));height:calc(100svh - var(--railTop, 60px));overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(40px,5vh,72px) clamp(22px,4.6vw,74px) clamp(30px,5vh,52px)">
+
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;transform:translate3d(calc(var(--mx,0) * 8px), calc(var(--my,0) * 8px), 0);background:radial-gradient(120% 80% at 78% 18%, rgba(198,242,78,.055), transparent 60%),radial-gradient(90% 70% at 8% 92%, rgba(255,255,255,.035), transparent 62%)"></div>
+    <div aria-hidden="true" style="position:absolute;top:50%;right:6%;width:min(74vh,760px);aspect-ratio:1;border:1px solid rgba(244,244,240,.055);border-radius:50%;transform:translate3d(calc(var(--mx,0) * 20px), calc(-50% + var(--my,0) * 20px), 0);pointer-events:none"></div>
+    <div aria-hidden="true" style="position:absolute;left:0;right:0;top:62%;height:1px;background:linear-gradient(90deg,transparent,rgba(244,244,240,.09) 30%,rgba(198,242,78,.22) 68%,transparent);transform:translate3d(calc(var(--mx,0) * 12px),0,0);pointer-events:none"></div>
+
+    <img src="assets/portrait.png" alt="Portrait of Vishnu K. standing in a design studio" style="position:absolute;top:0;bottom:0;right:0;width:clamp(250px,49%,660px);height:100%;object-fit:cover;object-position:76% 20%;filter:var(--portFilter,grayscale(1) contrast(1.14) brightness(.86));transform:translate3d(calc(var(--mx,0) * -14px), calc(var(--my,0) * -12px + var(--hp,0) * -34px), 0) scale(calc(1.06 + var(--hp,0) * 0.07));transition:filter .5s ease;will-change:transform" />
+    <div aria-hidden="true" style="position:absolute;top:0;bottom:0;right:0;width:clamp(250px,49%,660px);background:var(--accent);mix-blend-mode:color;opacity:var(--portOverlay,.16);pointer-events:none"></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,#0A0A0A 0%,#0A0A0A 34%,rgba(10,10,10,.9) 52%,rgba(10,10,10,.42) 74%,rgba(10,10,10,.72) 100%)"></div>
+    <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#0A0A0A 0%,rgba(10,10,10,.55) 16%,transparent 42%)"></div>
+
+    <div style="position:relative;display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;transform:translate3d(calc(var(--mx,0) * -5px),0,0);opacity:calc(1 - var(--hp,0) * 1.6)">
+      <div style="font:700 11px/1 'Manrope',sans-serif;letter-spacing:.28em;color:var(--accent)">PRODUCT DESIGN LEAD</div>
+      <div style="font:600 10px/1 'Manrope',sans-serif;letter-spacing:.2em;color:var(--dim)">CHENNAI, TAMIL NADU</div>
+    </div>
+
+    <div style="position:relative;width:min(760px,92%);transform:translate3d(calc(var(--mx,0) * -9px), calc(var(--my,0) * -5px),0)">
+      <h1 style="margin:0;position:relative;font:600 clamp(32px,7.1vw,90px)/1 'Manrope',sans-serif;letter-spacing:-.04em;text-wrap:pretty">
+        <span style="display:block;opacity:calc(1 - var(--hp,0) * 2.4);transform:translateY(calc(var(--hp,0) * -26px))">Creating simple experiences for <br /><span style="color:var(--dim)"> complex problems.</span></span>
+        <span aria-hidden="true" style="position:absolute;left:0;top:0;display:block;opacity:calc((var(--hp,0) - .46) * 3.4);transform:translateY(calc((1 - var(--hp,0)) * 26px))">Simplifying <span style="font-style:italic;color:var(--accent)">complexity.</span></span>
+      </h1>
+      <div style="margin-top:clamp(18px,2.4vw,30px);display:flex;align-items:center;gap:14px;flex-wrap:wrap;font:600 11px/1 'Manrope',sans-serif;letter-spacing:.2em;color:var(--dim);opacity:calc(1 - var(--hp,0) * 1.9)">
+        <span>10+ YEARS</span><span style="color:var(--accent)">•</span><span>UX</span><span style="color:var(--accent)">•</span><span>PRODUCT</span><span style="color:var(--accent)">•</span><span>AI</span>
+      </div>
+    </div>
+
+    <div style="position:relative;transform:translate3d(calc(var(--mx,0) * -3px),0,0)">
+      <div style="margin-top:clamp(20px,3vh,34px);display:flex;align-items:center;gap:10px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.24em;color:#7A7A74;opacity:calc(1 - var(--hp,0) * 3)">
+        <span style="width:1px;height:22px;background:linear-gradient(180deg,var(--accent),transparent)"></span>SCROLL
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-reveal="1" style="position:relative;padding:clamp(90px,13vh,170px) clamp(22px,4.6vw,74px);border-top:1px solid var(--line)">
+  <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 18px));transition:opacity .8s cubic-bezier(.16,.84,.3,1),transform .8s cubic-bezier(.16,.84,.3,1)">
+    <span style="width:26px;height:1px;background:#3A3A38"></span>I DON&#8217;T JUST DESIGN SCREENS.
+  </div>
+  <p style="margin:clamp(28px,4vw,52px) 0 0;max-width:1180px;font:300 clamp(30px,4.7vw,76px)/1.1 'Manrope',sans-serif;letter-spacing:-.02em;text-wrap:pretty;opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 26px));transition:opacity .9s cubic-bezier(.16,.84,.3,1) .1s,transform .9s cubic-bezier(.16,.84,.3,1) .1s">
+    I simplify complexity, connect systems, and turn ideas into <span style="color:var(--dim)">experiences people understand.</span>
+  </p>
+</section>
+
+<section aria-label="Industries" style="position:relative;padding:clamp(24px,3vw,40px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--graphite);overflow:hidden">
+  <div ref="{{ marqueeRef }}" style="display:flex;width:max-content;will-change:transform">
+    <sc-for list="{{ industries }}" as="m" hint-placeholder-count="12">
+      <span style="display:flex;align-items:center;gap:clamp(20px,3vw,44px);padding-right:clamp(20px,3vw,44px);white-space:nowrap;font:300 clamp(22px,3.4vw,50px)/1 'Manrope',sans-serif;letter-spacing:.01em;color:{{ m.color }}">{{ m.word }}<span style="font-size:.34em;color:var(--accent)">&#9679;</span></span>
+    </sc-for>
+  </div>
+</section>
+
+<section data-reveal="1" style="padding:clamp(90px,13vh,170px) clamp(22px,4.6vw,74px)">
+  <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim);opacity:var(--in,1);transition:opacity .8s ease"><span style="width:26px;height:1px;background:#3A3A38"></span>EXPERIENCE</div>
+  <h2 style="margin:clamp(24px,3.4vw,44px) 0 0;max-width:1000px;font:300 clamp(28px,4.4vw,70px)/1.1 'Manrope',sans-serif;letter-spacing:-.02em;opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 24px));transition:opacity .9s cubic-bezier(.16,.84,.3,1) .08s,transform .9s cubic-bezier(.16,.84,.3,1) .08s">10+ years of making things simpler</h2>
+
+  <div style="margin-top:clamp(48px,7vw,86px);display:flex;flex-wrap:wrap;gap:1px;background:var(--line);border:1px solid var(--line)">
+    <div style="flex:1 1 240px;background:var(--bg);padding:clamp(24px,3vw,38px);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 18px));transition:opacity .7s ease .1s,transform .7s cubic-bezier(.16,.84,.3,1) .1s">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">CURRENT</div>
+      <div style="margin-top:16px;font:700 clamp(19px,2.2vw,30px)/1.1 'Manrope',sans-serif;letter-spacing:-.015em">Colan Infotech</div>
+      <div style="margin-top:8px;font:400 13px/1.5 'Manrope',sans-serif;color:var(--dim)">Design Lead</div>
+    </div>
+    <div style="flex:1 1 240px;background:var(--bg);padding:clamp(24px,3vw,38px);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 18px));transition:opacity .7s ease .2s,transform .7s cubic-bezier(.16,.84,.3,1) .2s">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">PRACTICE</div>
+      <div style="margin-top:16px;font:700 clamp(19px,2.2vw,30px)/1.1 'Manrope',sans-serif;letter-spacing:-.015em">10+ years</div>
+      <div style="margin-top:8px;font:400 13px/1.5 'Manrope',sans-serif;color:var(--dim)">Digital products and experiences across multiple industries</div>
+    </div>
+    <div style="flex:1 1 240px;background:var(--bg);padding:clamp(24px,3vw,38px);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 18px));transition:opacity .7s ease .3s,transform .7s cubic-bezier(.16,.84,.3,1) .3s">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">BASED</div>
+      <div style="margin-top:16px;font:700 clamp(19px,2.2vw,30px)/1.1 'Manrope',sans-serif;letter-spacing:-.015em">Chennai, India</div>
+      <div style="margin-top:8px;display:flex;align-items:center;gap:7px;font:400 13px/1.5 'Manrope',sans-serif;color:var(--accent)"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>Available</div>
+    </div>
+  </div>
+
+  <div style="margin-top:clamp(44px,6vw,76px);padding-top:clamp(28px,4vw,46px);border-top:1px solid var(--line)">
+    <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74;margin-bottom:26px">EVOLUTION OF FOCUS</div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(12px,2vw,26px)">
+      <sc-for list="{{ evolution }}" as="e" hint-placeholder-count="5">
+        <div style="display:flex;align-items:center;gap:clamp(12px,2vw,26px);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 14px));transition:opacity .6s ease var(--d,0s),transform .6s cubic-bezier(.16,.84,.3,1) var(--d,0s)" data-stagger="{{ e.i }}">
+          <span style="padding:10px 18px;border:1px solid var(--line);border-radius:999px;font:600 11px/1 'Manrope',sans-serif;letter-spacing:.18em;color:{{ e.color }}">{{ e.word }}</span>
+          <sc-if value="{{ e.arrow }}" hint-placeholder-val="{{ true }}"><span aria-hidden="true" style="width:clamp(10px,2vw,26px);height:1px;background:#3A3A38"></span></sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit" data-reveal="1" data-screen-label="Toolkit" style="padding:clamp(90px,13vh,170px) clamp(22px,4.6vw,74px);border-top:1px solid var(--line);background:var(--graphite)">
+  <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim)"><span style="width:26px;height:1px;background:#3A3A38"></span>02 — TOOLKIT</div>
+  <h2 style="margin:clamp(24px,3.4vw,44px) 0 0;max-width:1000px;font:300 clamp(28px,4.4vw,70px)/1.1 'Manrope',sans-serif;letter-spacing:-.02em;opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 22px));transition:opacity .9s ease,transform .9s cubic-bezier(.16,.84,.3,1)">My toolkit, your advantage</h2>
+
+  <div style="margin-top:clamp(46px,6vw,80px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,236px),1fr));gap:clamp(22px,3vw,44px)">
+    <sc-for list="{{ toolkit }}" as="cat" hint-placeholder-count="4">
+      <div style="opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 20px));transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.16,.84,.3,1) var(--d,0s)" data-stagger="{{ cat.i }}">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;padding-bottom:14px;border-bottom:1px solid #262624">
+          <span style="font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--accent)">{{ cat.name }}</span>
+          <span style="font:600 10px/1 'Manrope',sans-serif;color:#7A7A74">{{ cat.count }}</span>
+        </div>
+        <ul style="list-style:none;margin:0;padding:0">
+          <sc-for list="{{ cat.items }}" as="t" hint-placeholder-count="5">
+            <li><button type="button" data-sfx="1" onMouseEnter="{{ t.enter }}" onMouseLeave="{{ t.leave }}" onFocus="{{ t.enter }}" onBlur="{{ t.leave }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #1A1A19;padding:13px 2px;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:10px;font:500 14px/1.35 'Manrope',sans-serif;color:{{ t.color }};cursor:var(--cur,none);transition:color .25s ease,padding-left .3s cubic-bezier(.16,.84,.3,1);padding-left:{{ t.pad }}">{{ t.name }}<span aria-hidden="true" style="font:600 10px/1 'Manrope',sans-serif;color:var(--accent);opacity:{{ t.on }};transition:opacity .25s ease">&#8594;</span></button></li>
+          </sc-for>
+        </ul>
+        <div style="margin-top:16px;min-height:52px;font:500 10px/1.7 'Manrope',sans-serif;letter-spacing:.14em;color:var(--dim);opacity:{{ cat.detailOn }};transition:opacity .3s ease">{{ cat.detail }}</div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section id="services" data-reveal="1" data-screen-label="Services" style="padding:clamp(90px,13vh,170px) clamp(22px,4.6vw,74px);border-top:1px solid var(--line)">
+  <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim)"><span style="width:26px;height:1px;background:#3A3A38"></span>03 — WHAT I SOLVE</div>
+  <div style="margin-top:clamp(46px,6vw,80px);display:flex;flex-direction:column;border-top:1px solid var(--line)">
+    <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+      <article data-sfx="1" style="--t:{{ s.tint }};display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(14px,3vw,48px);padding:clamp(28px,4vw,52px) 0;border-bottom:1px solid var(--line);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 22px));transition:opacity .8s ease var(--d,0s),transform .8s cubic-bezier(.16,.84,.3,1) var(--d,0s),background .4s ease;position:relative" style-hover="background:#0F0F0E" data-stagger="{{ s.i }}">
+        <div style="display:flex;align-items:baseline;gap:16px">
+          <span style="font:600 11px/1 'Manrope',sans-serif;letter-spacing:.2em;color:var(--accent)">{{ s.n }}</span>
+          <span style="font:600 11px/1 'Manrope',sans-serif;letter-spacing:.2em;color:var(--dim)">{{ s.kind }}</span>
+        </div>
+        <h3 style="margin:0;font:500 clamp(24px,3.1vw,46px)/1.08 'Manrope',sans-serif;letter-spacing:-.02em">{{ s.title }}</h3>
+        <p style="margin:0;max-width:520px;font:400 clamp(14px,1.15vw,16px)/1.65 'Manrope',sans-serif;color:#A9A9A3;text-wrap:pretty">{{ s.body }}</p>
+      </article>
+    </sc-for>
+  </div>
+</section>
+
+<section id="work" data-screen-label="Selected work" style="padding:clamp(90px,13vh,170px) 0 clamp(60px,8vh,110px);border-top:1px solid var(--line);background:var(--graphite)">
+  <div data-reveal="1" style="padding:0 clamp(22px,4.6vw,74px)">
+    <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim)"><span style="width:26px;height:1px;background:#3A3A38"></span>04 — SELECTED WORK</div>
+    <h2 style="margin:clamp(24px,3.4vw,44px) 0 0;max-width:900px;font:300 clamp(28px,4.4vw,70px)/1.1 'Manrope',sans-serif;letter-spacing:-.02em;opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 22px));transition:opacity .9s ease,transform .9s cubic-bezier(.16,.84,.3,1)">Selected work</h2>
+    <p style="margin:22px 0 0;max-width:520px;font:400 clamp(14px,1.15vw,16px)/1.65 'Manrope',sans-serif;color:#A9A9A3;opacity:var(--in,1);transition:opacity .9s ease .12s">A decade of solving different problems, across different products, platforms and industries.</p>
+  </div>
+
+  <div data-reveal="1" style="margin-top:clamp(48px,7vw,96px);padding:0 clamp(22px,4.6vw,74px)">
+    <a href="https://www.figma.com/proto/Pkh4Ztj03Jg3Nes8V21YBi/Einstein-II---Part-2?page-id=6264%3A11776&node-id=7676-47337&viewport=15%2C-1409%2C0.12&t=06E0D1t0X1r7bgWH-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=7676%3A47337&hide-ui=1" target="_blank" rel="noopener noreferrer" data-sfx="1" data-cursor="VIEW CASE STUDY" aria-label="Hallmark Healthcare — Flexible Workforce Suite, opens case study in a new tab" style="display:block;color:inherit;cursor:var(--cur,none);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 30px));transition:opacity 1s ease,transform 1s cubic-bezier(.16,.84,.3,1)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;padding-bottom:22px">
+        <div>
+          <div style="font:600 10px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#5EE0D6">FEATURED PROJECT</div>
+          <h3 style="margin:16px 0 0;font:250 clamp(32px,5.6vw,92px)/1.02 'Manrope',sans-serif;letter-spacing:-.025em;transform:translateY(calc(var(--fp,0) * -14px));transition:transform .2s linear">Hallmark Healthcare</h3>
+          <div style="margin-top:12px;font:500 clamp(15px,1.6vw,22px)/1.3 'Manrope',sans-serif;color:var(--dim)">Flexible Workforce Suite</div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+          <span style="padding:8px 14px;border:1px solid #2A2A28;border-radius:999px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:#8A8A85">HEALTHCARE</span>
+          <span style="padding:8px 14px;border:1px solid #2A2A28;border-radius:999px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:#8A8A85">PRODUCT DESIGN</span>
+          <span style="padding:8px 14px;border:1px solid #2A2A28;border-radius:999px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:#8A8A85">UX</span>
+          <span style="padding:8px 14px;border:1px solid #2A2A28;border-radius:999px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:#8A8A85">ENTERPRISE</span>
+        </div>
+      </div>
+      <div style="position:relative;overflow:hidden;border:1px solid #2A2A28;background:#000;aspect-ratio:2.1/1">
+        <img src="assets/hallmark.png" alt="Hallmark Healthcare Flexible Workforce Suite website hero" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top center;transform:scale(calc(1.02 + var(--fp,0) * 0.06));transition:transform .2s linear" />
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.72))"></div>
+        <div style="position:absolute;left:clamp(18px,2.4vw,34px);right:clamp(18px,2.4vw,34px);bottom:clamp(18px,2.4vw,32px);display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px">
+          <p style="margin:0;max-width:520px;font:400 clamp(13px,1.1vw,15px)/1.6 'Manrope',sans-serif;color:#D8D8D2">Enterprise workforce platform for health systems, combining flexible workforce and physician enterprise solutions.</p>
+          <span style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;background:var(--accent);color:#0A0A0A;border-radius:999px;font:500 10px/1 'Manrope',sans-serif;letter-spacing:.2em;min-height:44px">VIEW CASE STUDY <span aria-hidden="true">&#8594;</span></span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div data-reveal="1" style="margin-top:clamp(70px,10vw,130px)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:0 clamp(22px,4.6vw,74px);margin-bottom:26px">
+      <div style="font:600 10px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">PRODUCT &amp; PLATFORM WORK</div>
+    </div>
+    <div role="region" aria-label="Horizontally scrollable project strip" tabindex="0" style="display:flex;justify-content:space-evenly;gap:clamp(14px,2vw,28px);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:4px clamp(22px,4.6vw,74px) 26px;scrollbar-width:thin;scrollbar-color:#2A2A28 transparent">
+      <sc-for list="{{ strip }}" as="p" hint-placeholder-count="3">
+        <a href="{{ p.url }}" target="_blank" rel="noopener noreferrer" data-sfx="1" data-cursor="OPEN" aria-label="{{ p.aria }}" style="--t:{{ p.tint }};flex:0 0 auto;width:min(78vw,540px);scroll-snap-align:start;color:inherit;cursor:var(--cur,none);opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 26px));transition:opacity .8s ease var(--d,0s),transform .8s cubic-bezier(.16,.84,.3,1) var(--d,0s)" data-stagger="{{ p.i }}">
+          <div style="position:relative;overflow:hidden;border:1px solid #2A2A28;background:#0A0A0A;aspect-ratio:4/3">
+            <img src="{{ p.img }}" alt="{{ p.alt }}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .7s cubic-bezier(.16,.84,.3,1),filter .5s ease;filter:saturate(.92) brightness(.94)" style-hover="transform:scale(1.045);filter:saturate(1.05) brightness(1)" />
+            <div aria-hidden="true" style="position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--t)"></div>
+          </div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:18px 2px 0">
+            <div>
+              <h3 style="margin:0;font:600 clamp(20px,2.3vw,32px)/1.15 'Manrope',sans-serif;letter-spacing:-.02em">{{ p.title }}</h3>
+              <div style="margin-top:10px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:var(--dim)">{{ p.cats }}</div>
+            </div>
+            <span aria-hidden="true" style="font:600 12px/1 'Manrope',sans-serif;color:var(--t)">&#8599;</span>
+          </div>
+          <p style="margin:14px 0 0;font:400 13px/1.6 'Manrope',sans-serif;color:#8F8F8A;text-wrap:pretty">{{ p.body }}</p>
+        </a>
+      </sc-for>
+      </div>
+</section>
+
+<section data-reveal="1" style="position:relative;padding:clamp(90px,13vh,170px) clamp(22px,4.6vw,74px);border-top:1px solid var(--line);overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(70% 60% at 82% 12%, rgba(198,242,78,.06), transparent 62%)"></div>
+  <div style="position:relative">
+    <div style="display:flex;align-items:center;gap:12px;font:700 11px/1 'Manrope',sans-serif;letter-spacing:.22em;color:var(--dim)"><span style="width:26px;height:1px;background:#3A3A38"></span>CURRENTLY EXPLORING</div>
+    <div style="margin-top:clamp(40px,5.6vw,72px);display:flex;flex-direction:column;gap:clamp(4px,.8vw,10px)">
+      <sc-for list="{{ exploring }}" as="x" hint-placeholder-count="6">
+        <div data-sfx="1" style="display:flex;align-items:center;gap:clamp(12px,2vw,26px);padding:clamp(8px,1.1vw,14px) 0;border-bottom:1px solid #171716;opacity:var(--in,1);transform:translateY(calc((1 - var(--in,1)) * var(--travel,1) * 18px));transition:opacity .7s ease var(--d,0s),transform .7s cubic-bezier(.16,.84,.3,1) var(--d,0s)" data-stagger="{{ x.i }}">
+          <span style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.2em;color:#7A7A74;min-width:22px">{{ x.n }}</span>
+          <span style="font:300 clamp(22px,4.2vw,64px)/1.06 'Manrope',sans-serif;letter-spacing:-.02em;color:#6E6E69;transition:color .35s ease,letter-spacing .5s cubic-bezier(.16,.84,.3,1)" style-hover="color:#F4F4F0;letter-spacing:-.008em">{{ x.word }}</span>
+          <span style="flex:1;height:1px;background:linear-gradient(90deg,#1F1F1D,transparent)"></span>
+          <span style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.18em;color:#7A7A74">{{ x.tag }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin:clamp(36px,5vw,64px) 0 0;max-width:560px;font:400 clamp(14px,1.15vw,17px)/1.65 'Manrope',sans-serif;color:#A9A9A3;text-wrap:pretty">Exploring how AI changes the way products are designed, built and experienced. AI sits inside the design process here, as research, ideation, writing and prototyping support, not as a replacement for product judgement.</p>
+  </div>
+</section>
+
+<section id="contact" data-reveal="1" data-screen-label="Contact" style="padding:clamp(90px,14vh,180px) clamp(22px,4.6vw,74px) clamp(70px,9vh,120px);border-top:1px solid var(--line)">
+  <div style="font:700 11px/1 'Manrope',sans-serif;letter-spacing:.24em;color:var(--dim);opacity:var(--in,1);transition:opacity .8s ease">05 — HAVE A ROLE IN MIND?</div>
+  <a ref="{{ ctaRef }}" href="mailto:mailtovishnu2706@gmail.com" data-sfx="1" data-cursor="EMAIL" style="display:inline-flex;align-items:baseline;gap:clamp(12px,2.4vw,34px);margin-top:clamp(20px,3vw,40px);color:var(--ink);cursor:var(--cur,none);transition:transform .35s cubic-bezier(.16,.84,.3,1);opacity:var(--in,1)" style-hover="color:#C6F24E">
+    <span style="font:200 clamp(52px,15.5vw,250px)/0.9 'Manrope',sans-serif;letter-spacing:-.055em">Let&#8217;s talk.</span>
+    <span aria-hidden="true" style="font:300 clamp(20px,3vw,48px)/1 'Manrope',sans-serif;color:var(--accent);transform:translateX(calc(var(--arw,0) * 12px));transition:transform .4s cubic-bezier(.16,.84,.3,1)">&#8594;</span>
+  </a>
+
+  <div style="margin-top:clamp(56px,8vw,110px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <a href="mailto:mailtovishnu2706@gmail.com" data-sfx="1" style="background:var(--bg);padding:clamp(22px,3vw,34px);color:inherit;cursor:var(--cur,none);transition:background .35s ease" style-hover="background:#101010">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">EMAIL</div>
+      <div style="margin-top:14px;font:600 clamp(14px,1.4vw,19px)/1.4 'Manrope',sans-serif;word-break:break-all">mailtovishnu2706@gmail.com</div>
+    </a>
+    <a href="tel:+919003581923" data-sfx="1" style="background:var(--bg);padding:clamp(22px,3vw,34px);color:inherit;cursor:var(--cur,none);transition:background .35s ease" style-hover="background:#101010">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">PHONE</div>
+      <div style="margin-top:14px;font:600 clamp(14px,1.4vw,19px)/1.4 'Manrope',sans-serif">+91 90035 81923</div>
+    </a>
+    <div style="background:var(--bg);padding:clamp(22px,3vw,34px)">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">LINKEDIN</div>
+      <div style="margin-top:14px;font:600 clamp(14px,1.4vw,19px)/1.4 'Manrope',sans-serif">Vishnu K.</div>
+      <a href="https://www.linkedin.com/in/vishnu-k2730/" target="_blank" style="margin-top:8px;font:600 9px/1 'Manrope',sans-serif;letter-spacing:.16em;color:#7A7A74">CHECK MY PROFILE</a>
+    </div>
+    <div style="background:var(--bg);padding:clamp(22px,3vw,34px)">
+      <div style="font:600 9px/1 'Manrope',sans-serif;letter-spacing:.22em;color:#7A7A74">LOCATION</div>
+      <div style="margin-top:14px;font:600 clamp(14px,1.4vw,19px)/1.4 'Manrope',sans-serif">Chennai, Tamil Nadu</div>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:clamp(50px,7vh,90px) clamp(22px,4.6vw,74px) clamp(60px,8vh,100px);border-top:1px solid var(--line);background:var(--graphite);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(28px,4vw,60px);align-items:end">
+  <div>
+    <div style="font:800 13px/1.2 'Manrope',sans-serif;letter-spacing:.26em">VISHNU&#8217;S LAB</div>
+    <p style="margin:18px 0 0;max-width:320px;font:400 14px/1.6 'Manrope',sans-serif;color:#8F8F8A">Designed with curiosity. Built around problems worth solving.</p>
+  </div>
+  <div style="font:600 10px/2 'Manrope',sans-serif;letter-spacing:.18em;color:var(--dim)">
+    <div>UX • PRODUCT • AI</div>
+    <div>CHENNAI, INDIA</div>
+    <div style="display:flex;align-items:center;gap:7px;color:var(--accent)"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>OPEN TO INTERESTING PROBLEMS</div>
+  </div>
+  <div style="font:600 10px/1.8 'Manrope',sans-serif;letter-spacing:.18em;color:#7A7A74;justify-self:start">© 2026 VISHNU K.</div>
+</footer>
+
+</main>
+
+<button type="button" onClick="{{ toggleSound }}" aria-pressed="{{ soundOn }}" style="position:fixed;right:clamp(16px,2vw,28px);bottom:clamp(16px,2vw,28px);z-index:70;display:inline-flex;align-items:center;gap:9px;min-height:40px;padding:11px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(10,10,10,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font:600 10px/1 'Manrope',sans-serif;letter-spacing:.18em;color:var(--dim);cursor:pointer;transition:color .25s ease,border-color .25s ease" style-hover="color:#F4F4F0;border-color:#3A3A38">
+  <span aria-hidden="true" style="width:6px;height:6px;border-radius:50%;background:{{ soundDot }}"></span>SOUND: {{ soundLabel }}
+</button>
+
+<div ref="{{ ringRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:90;display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(244,244,240,.45);border-radius:50%;background:transparent;mix-blend-mode:difference;pointer-events:none;opacity:0;transition:width .34s cubic-bezier(.16,.84,.3,1),height .34s cubic-bezier(.16,.84,.3,1),background .28s ease,border-color .28s ease,opacity .3s ease">
+  <span ref="{{ labelRef }}" aria-hidden="true" style="font:700 9px/1 'Manrope',sans-serif;letter-spacing:.18em;color:#0A0A0A;white-space:nowrap;opacity:0;transition:opacity .2s ease"></span>
+</div>
+<div ref="{{ dotRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:91;width:6px;height:6px;border-radius:50%;background:var(--accent);pointer-events:none;opacity:0;transition:opacity .3s ease"></div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Cinematic&quot;,&quot;options&quot;:[&quot;Cinematic&quot;,&quot;Restrained&quot;,&quot;Still&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;},&quot;portrait&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Duotone&quot;,&quot;options&quot;:[&quot;Duotone&quot;,&quot;Monochrome&quot;,&quot;Natural&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;},&quot;cursor&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Custom dot&quot;,&quot;options&quot;:[&quot;Custom dot&quot;,&quot;System cursor&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Feel&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#C6F24E&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#C6F24E&quot;,&quot;#4F5BFF&quot;,&quot;#7C5CFF&quot;,&quot;#2FE0C0&quot;],&quot;section&quot;:&quot;Identity&quot;},&quot;sound&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Interaction&quot;}}">
+const TOOLKIT = [
+  { name: 'DESIGN', items: [
+    ['Adobe Photoshop', 'RETOUCHING · COMPOSITION'],
+    ['Adobe Illustrator', 'VECTOR · ICONOGRAPHY'],
+    ['Adobe After Effects', 'MOTION · UI ANIMATION'],
+    ['Adobe Audition', 'AUDIO · SOUND DESIGN'],
+    ['Figma', 'INTERFACE DESIGN · PROTOTYPING · DESIGN SYSTEMS'],
+    ['Sketch', 'INTERFACE DESIGN · SYMBOLS']
+  ]},
+  { name: 'AI', items: [
+    ['ChatGPT', 'IDEATION · UX WRITING'],
+    ['Claude', 'RESEARCH · SYNTHESIS'],
+    ['Cursor', 'CODE EXPLORATION'],
+    ['Google Antigravity', 'AGENTIC WORKFLOWS'],
+    ['Claude Code', 'PROTOTYPING · BUILD']
+  ]},
+  { name: 'PRODUCT', items: [
+    ['UX Research', 'INTERVIEWS · USABILITY TESTING'],
+    ['UI Design', 'LAYOUT · HIERARCHY'],
+    ['Prototyping', 'FLOWS · INTERACTION'],
+    ['Design Systems', 'COMPONENTS · PATTERNS'],
+    ['Interaction Design', 'MOTION · STATES'],
+    ['UX Writing', 'CLARITY · TONE']
+  ]},
+  { name: 'COLLABORATION', items: [
+    ['Developer Collaboration', 'HANDOFF · FEASIBILITY'],
+    ['Product Thinking', 'SCOPE · TRADE-OFFS'],
+    ['Ideation', 'WORKSHOPS · CONCEPTS'],
+    ['Design Critique', 'FEEDBACK · RATIONALE']
+  ]}
+];
+
+const KEYWORDS = [
+  ['UX', 'RESEARCH, FLOWS AND USABILITY'],
+  ['PRODUCT', 'FROM PROBLEM TO SHIPPED EXPERIENCE'],
+  ['AI', 'AI-ASSISTED DESIGN AND EXPLORATION'],
+  ['SYSTEMS', 'COMPONENTS, PATTERNS, SCALE'],
+  ['RESEARCH', 'INTERVIEWS AND SYNTHESIS'],
+  ['MOTION', 'INTERACTION AND ANIMATION']
+];
+
+const STRIP = [
+
+  { title: 'E-Wallet & Café', cats: 'FINTECH · MOBILE · PRODUCT DESIGN', tint: '#4F5BFF', img: 'assets/ewallet.png',
+    url: 'https://www.behance.net/gallery/88998959/e-Wallet-and-Cafe',
+    body: 'A mobile wallet experience covering payments, rewards and outlet commerce for a café brand.',
+    alt: 'E-Wallet and Café mobile app design presentation' },
+  { title: 'NRL Imagery', cats: 'SPORTS · MEDIA · WEB EXPERIENCE', tint: '#22B14C', img: 'assets/nrl.png',
+    url: 'https://www.behance.net/gallery/139892747/NRL-Imagery',
+    body: 'An image-led web experience for browsing official photography collections from the National Rugby League.',
+    alt: 'NRL Imagery web platform shown on a laptop in a stadium composition' }
+];
+
+const GRID = [
+  { title: 'ERival Gaming', cats: 'GAMING · UI DESIGN · INTERACTION', tint: '#F2B324', img: 'assets/erival.png',
+    url: 'https://www.behance.net/gallery/75832375/ERival-Gaming-Emulator-Dashboard-Design-2020',
+    body: 'Dashboard design for a gaming emulator platform, built on a dark, high-contrast interface treatment.',
+    alt: 'ERival Gaming emulator dashboard design presentation' },
+];
+
+const SERVICES = [
+  { n: '01', kind: 'UNDERSTAND', title: 'UX Research', tint: '#C6F24E', body: 'Interviews, usability testing and synthesis that turn real user behaviour into product decisions.' },
+  { n: '02', kind: 'DESIGN', title: 'Product & AI Experiences', tint: '#C6F24E', body: 'Interfaces, prototypes and AI-powered workflows designed around real user needs.' },
+  { n: '03', kind: 'SYSTEMISE', title: 'Design Systems', tint: '#C6F24E', body: 'Reusable components, patterns and systems that help digital products scale consistently.' },
+  { n: '04', kind: 'EXPRESS', title: 'Visual & Motion', tint: '#C6F24E', body: 'Brand systems, motion, animation and visual storytelling that make products memorable.' }
+];
+
+const INDUSTRIES = ['HEALTHCARE','ENTERPRISE','ECOMMERCE','FINTECH','AI PRODUCTS','MOBILE APPS','DASHBOARDS','MANUFACTURING','CORPORATE','MOTION','DESIGN SYSTEMS'];
+const EXPLORING = ['AI AGENTS','GENERATIVE UI','AI-ASSISTED UX','DESIGN AUTOMATION','CLAUDE CODE','HUMAN + AI INTERACTION'];
+const EXPLORE_TAGS = ['ORCHESTRATION','INTERFACE','PROCESS','WORKFLOW','BUILD','BEHAVIOUR'];
+const PROCESS = ['RESEARCH','STRUCTURE','EXPERIENCE','SYSTEM','PRODUCT'];
+const EVOLUTION = ['UX','PRODUCT','ENTERPRISE','AI'];
+const NAV = ['intro','toolkit','services','work','contact'];
+
+class Component extends DCLogic {
+  state = { active: 'intro', kw: -1, tool: null, sound: false, menu: false, isMobile: false, ready: false };
+
+  rootRef = React.createRef();
+  dotRef = React.createRef();
+  ringRef = React.createRef();
+  labelRef = React.createRef();
+  marqueeRef = React.createRef();
+  ctaRef = React.createRef();
+
+  componentDidMount() {
+    this.dead = false;
+    this.motion = 1;
+    this.reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this.fine = window.matchMedia('(pointer: fine)').matches;
+
+
+    const root = this.rootRef.current;
+    this.applyProps();
+
+    this.applyLayout();
+    this.onResize = () => this.applyLayout();
+    window.addEventListener('resize', this.onResize, { passive: true });
+    this.mqDesk = window.matchMedia('(min-width: 900px)');
+    if (this.mqDesk.addEventListener) this.mqDesk.addEventListener('change', this.onResize);
+    window.addEventListener('load', this.onResize);
+    setTimeout(this.onResize, 120);
+    setTimeout(this.onResize, 600);
+
+    this.sweep();
+
+    this.hero = root.querySelector('[data-hero]');
+    this.featured = root.querySelector('[data-cursor="VIEW CASE STUDY"]');
+    this.sections = NAV.map(id => root.querySelector('#' + id));
+
+    this.onScroll = () => {
+      const now = performance.now();
+      if (now - (this.lastMeasure || 0) > 40) { this.lastMeasure = now; this.measure(); }
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
+    window.addEventListener('load', this.onScroll);
+    document.addEventListener('visibilitychange', this.onScroll);
+    this.measure();
+    if (Component.safety) clearInterval(Component.safety);
+    Component.safety = setInterval(() => {
+      if (this.dead) return;
+      this.lastMeasure = 0;
+      this.applyLayout();
+      this.measure();
+    }, 300);
+
+    if (this.fine) {
+      this.mx = 0; this.my = 0; this.tmx = 0; this.tmy = 0;
+      this.cx = window.innerWidth / 2; this.cy = window.innerHeight / 2;
+      this.px = this.cx; this.py = this.cy;
+      this.onMove = e => {
+        this.tmx = (e.clientX / window.innerWidth) * 2 - 1;
+        this.tmy = (e.clientY / window.innerHeight) * 2 - 1;
+        this.cx = e.clientX; this.cy = e.clientY;
+        if (!this.cursorShown) {
+          this.cursorShown = true;
+          if (this.dotRef.current) this.dotRef.current.style.opacity = '1';
+          if (this.ringRef.current) this.ringRef.current.style.opacity = '1';
+        }
+        if (this.reduced) {
+          const pos = 'translate3d(' + e.clientX + 'px,' + e.clientY + 'px,0) translate(-50%,-50%)';
+          if (this.dotRef.current) this.dotRef.current.style.transform = pos;
+          if (this.ringRef.current) this.ringRef.current.style.transform = pos;
+        }
+      };
+      window.addEventListener('mousemove', this.onMove, { passive: true });
+      this.onOver = e => {
+        const ring = this.ringRef.current, label = this.labelRef.current, dot = this.dotRef.current;
+        if (!ring || !label || !dot) return;
+        const tag = e.target.closest ? e.target.closest('[data-cursor]') : null;
+        const hit = e.target.closest ? e.target.closest('a,button,[data-sfx]') : null;
+        if (tag) {
+          const w = Math.max(74, (tag.getAttribute('data-cursor') || '').length * 8 + 40);
+          ring.style.width = w + 'px'; ring.style.height = '74px';
+          ring.style.borderRadius = '999px';
+          ring.style.background = 'var(--accent)';
+          ring.style.borderColor = 'transparent';
+          ring.style.mixBlendMode = 'normal';
+          label.textContent = tag.getAttribute('data-cursor');
+          label.style.opacity = '1';
+          dot.style.opacity = '0';
+        } else if (hit) {
+          ring.style.width = '58px'; ring.style.height = '58px';
+          ring.style.borderRadius = '50%';
+          ring.style.background = 'transparent';
+          ring.style.borderColor = 'var(--accent)';
+          ring.style.mixBlendMode = 'normal';
+          label.style.opacity = '0';
+          dot.style.opacity = this.cursorShown ? '1' : '0';
+        } else {
+          ring.style.width = '38px'; ring.style.height = '38px';
+          ring.style.borderRadius = '50%';
+          ring.style.background = 'transparent';
+          ring.style.borderColor = 'rgba(244,244,240,.45)';
+          ring.style.mixBlendMode = 'difference';
+          label.style.opacity = '0';
+          dot.style.opacity = this.cursorShown ? '1' : '0';
+        }
+      };
+      this.onDownScale = () => { this.press = 1; };
+      this.onUpScale = () => { this.press = 0; };
+      window.addEventListener('pointerdown', this.onDownScale, { passive: true });
+      window.addEventListener('pointerup', this.onUpScale, { passive: true });
+      if (!this.reduced) this.tick();
+      document.addEventListener('mouseover', this.onOver, { passive: true });
+    }
+
+    // magnetic CTA
+    if (this.fine && !this.reduced && this.ctaRef.current) {
+      const cta = this.ctaRef.current;
+      cta.addEventListener('mousemove', e => {
+        const r = cta.getBoundingClientRect();
+        const dx = (e.clientX - (r.left + r.width / 2)) / r.width;
+        const dy = (e.clientY - (r.top + r.height / 2)) / r.height;
+        cta.style.transform = 'translate3d(' + (dx * 16).toFixed(1) + 'px,' + (dy * 10).toFixed(1) + 'px,0)';
+        cta.style.setProperty('--arw', '1');
+      });
+      cta.addEventListener('mouseleave', () => {
+        cta.style.transform = 'translate3d(0,0,0)';
+        cta.style.setProperty('--arw', '0');
+      });
+    }
+
+    // marquee
+    if (!this.reduced) { this.mqX = 0; this.mqSpeed = 0.55; this.mqTarget = 0.55; this.mqTick(); }
+
+    // sound: arm only after a real user gesture
+    this.arm = () => {
+      if (this.soundAllowed && !this.state.sound) this.setState({ sound: true });
+      window.removeEventListener('pointerdown', this.arm);
+      window.removeEventListener('keydown', this.arm);
+    };
+    window.addEventListener('pointerdown', this.arm);
+    window.addEventListener('keydown', this.arm);
+
+    this.onSfxOver = e => { const t = e.target.closest ? e.target.closest('[data-sfx]') : null; if (t && t !== this.lastSfx) { this.lastSfx = t; this.play('hover'); } };
+    this.onSfxOut = e => { const t = e.target.closest ? e.target.closest('[data-sfx]') : null; if (!t) this.lastSfx = null; };
+    this.onSfxDown = e => { const t = e.target.closest ? e.target.closest('[data-sfx]') : null; if (t) this.play('click'); };
+    document.addEventListener('mouseover', this.onSfxOver, { passive: true });
+    document.addEventListener('mouseout', this.onSfxOut, { passive: true });
+    document.addEventListener('pointerdown', this.onSfxDown, { passive: true });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.onResize);
+    window.removeEventListener('load', this.onResize);
+    if (this.mqDesk && this.mqDesk.removeEventListener) this.mqDesk.removeEventListener('change', this.onResize);
+    window.removeEventListener('scroll', this.onScroll);
+    if (this.onMove) window.removeEventListener('mousemove', this.onMove);
+    if (this.onOver) document.removeEventListener('mouseover', this.onOver);
+    if (this.onDownScale) { window.removeEventListener('pointerdown', this.onDownScale); window.removeEventListener('pointerup', this.onUpScale); }
+    document.removeEventListener('mouseover', this.onSfxOver);
+    document.removeEventListener('mouseout', this.onSfxOut);
+    document.removeEventListener('pointerdown', this.onSfxDown);
+    window.removeEventListener('scroll', this.onScroll);
+    document.removeEventListener('scroll', this.onScroll, { capture: true });
+    document.removeEventListener('visibilitychange', this.onScroll);
+    this.dead = true;
+  }
+
+  applyProps() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    this.soundAllowed = this.props.sound !== false && !this.reduced;
+
+    root.style.setProperty('--accent', this.props.accent || '#C6F24E');
+
+    const port = this.props.portrait || 'Duotone';
+    root.style.setProperty('--portOverlay', port === 'Duotone' ? '.16' : '0');
+    root.style.setProperty('--portFilter', port === 'Natural'
+      ? 'contrast(1.04) brightness(.96) saturate(.9)'
+      : 'grayscale(1) contrast(1.14) brightness(.86)');
+
+    const mo = this.props.motion || 'Cinematic';
+    this.motion = mo === 'Still' ? 0 : (mo === 'Restrained' ? 0.5 : 1);
+    root.style.setProperty('--travel', String(this.motion));
+    if (this.motion === 0) root.style.setProperty('--hp', '0');
+
+    const sysCursor = this.props.cursor === 'System cursor' || !this.fine;
+    root.style.setProperty('--cur', sysCursor ? 'auto' : 'none');
+    if (this.dotRef.current) this.dotRef.current.style.display = sysCursor ? 'none' : 'block';
+    if (this.ringRef.current) this.ringRef.current.style.display = sysCursor ? 'none' : 'flex';
+    if (!sysCursor && this.cursorShown) {
+      if (this.dotRef.current) this.dotRef.current.style.opacity = '1';
+      if (this.ringRef.current) this.ringRef.current.style.opacity = '1';
+    }
+  }
+
+  componentDidUpdate(prev) {
+    if (!prev) return;
+    if (prev.accent !== this.props.accent || prev.portrait !== this.props.portrait ||
+        prev.motion !== this.props.motion || prev.cursor !== this.props.cursor ||
+        prev.sound !== this.props.sound) this.applyProps();
+  }
+
+  sweep() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    root.querySelectorAll('[data-stagger]:not([data-staggered])').forEach(el => {
+      const i = parseInt(el.getAttribute('data-stagger'), 10) || 0;
+      el.style.setProperty('--d', (i * 0.09).toFixed(2) + 's');
+      el.setAttribute('data-staggered', '');
+    });
+    this.sweeps = (this.sweeps || 0) + 1;
+    const vh = window.innerHeight;
+    root.querySelectorAll('[data-reveal]:not([data-revealed])').forEach(el => {
+      if (this.reduced) { el.setAttribute('data-revealed', ''); return; }
+      if (el.getBoundingClientRect().top < vh * 0.9) {
+        el.style.setProperty('--in', '1');
+        el.setAttribute('data-revealed', '');
+      } else if (this.sweeps > 1 && el.style.getPropertyValue('--in') !== '0') {
+        el.style.setProperty('--in', '0');
+      }
+    });
+  }
+
+  applyLayout() {
+    const mobile = !window.matchMedia('(min-width: 900px)').matches;
+    const root = this.rootRef.current;
+    if (root) {
+      root.style.setProperty('--rail', '0px');
+      root.style.setProperty('--railTop', '60px');
+    }
+    if (mobile !== this.state.isMobile) this.setState({ isMobile: mobile, menu: false });
+  }
+
+  measure() {
+    const root = this.rootRef.current;
+    if (!root) return;
+    if (this.hero && !this.reduced) {
+      const r = this.hero.getBoundingClientRect();
+      const span = Math.max(1, r.height - window.innerHeight);
+      const p = Math.min(1, Math.max(0, -r.top / span));
+      root.style.setProperty('--hp', (p * this.motion).toFixed(4));
+    }
+    if (this.featured && !this.reduced) {
+      const r = this.featured.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, 1 - (r.top + r.height * 0.3) / window.innerHeight));
+      this.featured.style.setProperty('--fp', p.toFixed(4));
+    }
+    this.sweep();
+    let active = this.state.active;
+    for (let i = 0; i < this.sections.length; i++) {
+      const s = this.sections[i];
+      if (!s) continue;
+      const r = s.getBoundingClientRect();
+      if (r.top <= 160 && r.bottom > 160) active = NAV[i];
+    }
+    if (active !== this.state.active) this.setState({ active: active });
+    const dir = window.scrollY - (this.lastY || 0);
+    this.lastY = window.scrollY;
+    this.scrollBoost = Math.min(1.6, Math.abs(dir) * 0.03);
+    this.mqDir = dir < -1 ? -1 : 1;
+  }
+
+  tick() {
+    if (this.dead) return;
+    this.mx += (this.tmx - this.mx) * 0.07;
+    this.my += (this.tmy - this.my) * 0.07;
+    const root = this.rootRef.current;
+    if (root) { root.style.setProperty('--mx', (this.mx * this.motion).toFixed(4)); root.style.setProperty('--my', (this.my * this.motion).toFixed(4)); }
+    this.px += (this.cx - this.px) * 0.34;
+    this.py += (this.cy - this.py) * 0.34;
+    this.rx = (this.rx || this.cx) + (this.cx - (this.rx || this.cx)) * 0.13;
+    this.ry = (this.ry || this.cy) + (this.cy - (this.ry || this.cy)) * 0.13;
+    this.pressV = (this.pressV || 0) + ((this.press || 0) - (this.pressV || 0)) * 0.2;
+    const dot = this.dotRef.current, ring = this.ringRef.current;
+    if (dot) dot.style.transform = 'translate3d(' + this.px.toFixed(1) + 'px,' + this.py.toFixed(1) + 'px,0) translate(-50%,-50%)';
+    if (ring) {
+      const sc = (1 - this.pressV * 0.16).toFixed(3);
+      const dx = (this.cx - this.rx), dy = (this.cy - this.ry);
+      const skew = Math.min(1.1, 1 + Math.min(0.1, Math.sqrt(dx * dx + dy * dy) / 900));
+      ring.style.transform = 'translate3d(' + this.rx.toFixed(1) + 'px,' + this.ry.toFixed(1) + 'px,0) translate(-50%,-50%) scale(' + (sc * skew).toFixed(3) + ')';
+    }
+    requestAnimationFrame(() => this.tick());
+  }
+
+  mqTick() {
+    if (this.dead) return;
+    const track = this.marqueeRef.current;
+    if (track) {
+      const target = (this.mqTarget + (this.scrollBoost || 0)) * this.motion;
+      this.mqSpeed += (target - this.mqSpeed) * 0.06;
+      this.mqX -= this.mqSpeed * (this.mqDir === -1 ? 0.55 : 1);
+      const half = track.scrollWidth / 2;
+      if (half > 0 && -this.mqX >= half) this.mqX += half;
+      track.style.transform = 'translate3d(' + this.mqX.toFixed(1) + 'px,0,0)';
+    }
+    requestAnimationFrame(() => this.mqTick());
+  }
+
+  play(kind) {
+    if (!this.state.sound || this.reduced) return;
+    try {
+      if (!this.ctx) this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const ctx = this.ctx;
+      if (ctx.state === 'suspended') ctx.resume();
+      const t = ctx.currentTime;
+      const osc = ctx.createOscillator(), gain = ctx.createGain(), flt = ctx.createBiquadFilter();
+      flt.type = 'lowpass';
+      if (kind === 'hover') {
+        osc.type = 'triangle'; osc.frequency.setValueAtTime(1180, t);
+        flt.frequency.setValueAtTime(2600, t);
+        gain.gain.setValueAtTime(0.0001, t);
+        gain.gain.exponentialRampToValueAtTime(0.016, t + 0.008);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.07);
+        osc.start(t); osc.stop(t + 0.09);
+      } else {
+        osc.type = 'sine'; osc.frequency.setValueAtTime(420, t);
+        osc.frequency.exponentialRampToValueAtTime(150, t + 0.14);
+        flt.frequency.setValueAtTime(1600, t);
+        gain.gain.setValueAtTime(0.0001, t);
+        gain.gain.exponentialRampToValueAtTime(0.05, t + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.19);
+        osc.start(t); osc.stop(t + 0.21);
+      }
+      osc.connect(flt); flt.connect(gain); gain.connect(ctx.destination);
+    } catch (e) {}
+  }
+
+  renderVals() {
+    const st = this.state;
+    const dim = '#8A8A85', ink = '#F4F4F0';
+    const nav = {};
+    NAV.forEach((id, i) => {
+      nav['c' + (i + 1)] = st.active === id ? ink : dim;
+      nav['c' + (i + 1) + 'o'] = st.active === id ? 1 : 0;
+    });
+
+    const keywords = KEYWORDS.map((k, i) => ({
+      word: k[0], i: i,
+      enter: () => this.setState({ kw: i }),
+      leave: () => this.setState({ kw: -1 })
+    }));
+
+    const toolkit = TOOLKIT.map((cat, ci) => {
+      const active = st.tool && st.tool[0] === ci ? st.tool[1] : -1;
+      return {
+        name: cat.name, i: ci, count: String(cat.items.length).padStart(2, '0'),
+        detail: active > -1 ? cat.items[active][1] : '',
+        detailOn: active > -1 ? 1 : 0,
+        items: cat.items.map((t, ti) => ({
+          name: t[0], color: active === ti ? '#F4F4F0' : '#9C9C96',
+          pad: active === ti ? '10px' : '2px', on: active === ti ? 1 : 0,
+          enter: () => this.setState({ tool: [ci, ti] }),
+          leave: () => this.setState({ tool: null })
+        }))
+      };
+    });
+
+    const mq = INDUSTRIES.concat(INDUSTRIES).map((w, i) => ({
+      word: w, color: i % 3 === 1 ? '#5E5E59' : '#EDEDE7'
+    }));
+
+    return Object.assign(nav, {
+      rootRef: this.rootRef, dotRef: this.dotRef, labelRef: this.labelRef, ringRef: this.ringRef,
+      marqueeRef: this.marqueeRef, ctaRef: this.ctaRef,
+      isMobile: st.isMobile, isDesktop: !st.isMobile,
+      menuOpen: st.menu, menuLabel: st.menu ? 'CLOSE' : 'MENU',
+      toggleMenu: () => this.setState({ menu: !st.menu }),
+      closeMenu: () => this.setState({ menu: false }),
+      keywords: keywords,
+      kwDetail: st.kw > -1 ? KEYWORDS[st.kw][1] : '',
+      kwDetailOn: st.kw > -1 ? 1 : 0,
+      toolkit: toolkit,
+      industries: mq,
+      process: PROCESS.map((p, i) => ({ label: p, n: '0' + (i + 1), i: i, arrow: i < PROCESS.length - 1 })),
+      evolution: EVOLUTION.map((e, i) => ({ word: e, i: i, arrow: i < EVOLUTION.length - 1, color: i === EVOLUTION.length - 1 ? '#C6F24E' : '#9C9C96' })),
+      services: SERVICES.map((s, i) => Object.assign({ i: i }, s)),
+      strip: STRIP.map((p, i) => Object.assign({ i: i, aria: p.title + ' — opens case study in a new tab' }, p)),
+      grid: GRID.filter(p => p.url).map((p, i) => Object.assign({ i: i, aria: p.title + ' — opens case study in a new tab' }, p)),
+      unlinked: GRID.filter(p => !p.url).map((p, i) => Object.assign({ i: i + 3 }, p)),
+      exploring: EXPLORING.map((w, i) => ({ word: w, i: i, n: '0' + (i + 1), tag: EXPLORE_TAGS[i] })),
+      soundOn: st.sound, soundLabel: st.sound ? 'ON' : 'OFF',
+      soundDot: st.sound ? '#C6F24E' : '#3A3A38',
+      toggleSound: () => { const on = !this.state.sound; this.setState({ sound: on }, () => { if (on) this.play('click'); }); }
+    });
+  }
+}
+</script>
+</body>
+</html>
